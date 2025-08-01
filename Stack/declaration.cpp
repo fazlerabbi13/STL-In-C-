@@ -20,10 +20,10 @@ int main() {
     st1.push(40);
     
     // Create another stack from st1
-    // stack<int> st2(st1);
+    stack<int> st2(st1);
     
     print(st1);
     cout << endl;
-    // print(st2);
+    print(st2);
     return 0;
 }
