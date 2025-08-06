@@ -19,15 +19,15 @@ int main()
     cout << "The upper bound of key 11 is ";
     cout << (*it).first << " " << (*it).second << endl;
 
-    // // when 13 is not present
-    // it = mp.upper_bound(13);
-    // cout << "The upper bound of key 13 is ";
-    // cout << (*it).first << " " << (*it).second << endl;
+    // when 13 is not present
+    it = mp.upper_bound(13);
+    cout << "The upper bound of key 13 is ";
+    cout << (*it).first << " " << (*it).second << endl;
 
     // when 17 is exceeds the maximum key, so size
-        // of mp is returned as key and value as 0.
-    // it = mp.upper_bound(17);
-    // cout << "The upper bound of key 17 is ";
-    // cout << (*it).first << " " << (*it).second;
+    //     of mp is returned as key and value as 0.
+    it = mp.upper_bound(17);
+    cout << "The upper bound of key 17 is ";
+    cout << (*it).first << " " << (*it).second;
     return 0;
 }
