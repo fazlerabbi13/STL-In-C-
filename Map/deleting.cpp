@@ -9,7 +9,7 @@ int main() {
     m.erase(2);
     
     // // Deleting by iterator
-    // m.erase(m.begin());
+    m.erase(m.begin());
     
     for(auto i : m)
         cout << i.first << " " << i.second
