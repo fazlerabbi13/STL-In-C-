@@ -12,7 +12,7 @@ int main() {
     
     // Updating value associated with key 1
     //using at() function
-    // um.at(1) = "Tips";
-    // cout << um.at(1);
+    um.at(1) = "Tips";
+    cout << um.at(1);
     return 0;
 }
