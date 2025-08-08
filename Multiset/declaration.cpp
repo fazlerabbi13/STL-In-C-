@@ -7,9 +7,9 @@ int main() {
     multiset<int> ms1;
     
     // Initialize with initializer list
-    // multiset<int> ms2 = {5, 3, 3, 1};
+     multiset<int> ms2 = {5, 3, 3, 1};
 
-    // for (auto i : ms2)
-    //     cout << i << " ";
+    for (auto i : ms2)
+        cout << i << " ";
     return 0;
 }
