@@ -8,11 +8,11 @@ int main() {
     
     // Creating unordered_multimap using
     // initializer list
-    //unordered_multimap<int, string> umm2 =
-    // {{1, "Geeks"}, {2, "For"}, {1, "C++"}};
+    unordered_multimap<int, string> umm2 =
+    {{1, "Geeks"}, {2, "For"}, {1, "C++"}};
 
-    // for (auto x : umm2) 
-    //     cout << x.first << ": " << x.second
-    //     << endl;
+    for (auto x : umm2) 
+        cout << x.first << ": " << x.second
+        << endl;
     return 0;
 }
