@@ -10,9 +10,9 @@ pair<int, string> p1;
 pair<int, string> p2 = {1, "Geeks"};
 
 // Insert values using make_pair method
-//pair<int, string> p3 = make_pair(2, "ForGeeks");
+pair<int, string> p3 = make_pair(2, "ForGeeks");
 
  cout << p2.first << " " << p2.second << endl;
-// cout << p3.first << " " << p3.second;
+cout << p3.first << " " << p3.second;
 return 0;
 }
