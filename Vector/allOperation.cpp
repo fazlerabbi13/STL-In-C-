@@ -13,7 +13,12 @@ int main(){
     for(auto it = num.cbegin(); it != num.cend(); ++it)
         cout << *it << "\n";
 
-    for(auto it = num.crbegin(); it !=num.crend(); ++it)
+    // for(auto it = num.crbegin(); it !=num.crend(); ++it)
+    //     cout << *it << "\n";
+    cout<<"----------";
+
+    num.emplace(num.begin()+2,100);
+    for(auto it = num.cbegin(); it != num.cend(); ++it)
         cout << *it << "\n";
 
     return 0;

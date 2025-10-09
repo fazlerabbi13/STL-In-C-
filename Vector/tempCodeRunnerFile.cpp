@@ -1,3 +1,3 @@
-  // for (int i : v)
-    //     cout << i << " ";
-    // return 0;
+for(auto it = num.crbegin(); it !=num.crend(); ++it)
+    //     cout << *it << "\n";
+    // cout<<"----------";
