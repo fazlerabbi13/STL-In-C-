@@ -1,0 +1,13 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+    vector<int> num {1,2,3,4,5,6,7,8,9};
+    cout << num.max_size()<<"\n";
+    // num.shrink_to_fit();
+    // cout << num.capacity();
+
+    cout << num.back() <<"\n";
+    return 0;
+}
