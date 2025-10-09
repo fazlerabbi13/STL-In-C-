@@ -15,14 +15,17 @@ int main(){
 
     // for(auto it = num.crbegin(); it !=num.crend(); ++it)
     //     cout << *it << "\n";
-    cout<<"----------";
+    cout<<"----------"<<"\n";
 
-    num.emplace(num.begin()+2,100);
+    // num.emplace(num.begin()+2,100);
 
     num.emplace_back(10);
     num.emplace_back(11);
-    
-    for(auto it = num.cbegin(); it != num.cend(); ++it)
+
+    num.erase(num.begin()+1);
+    num.erase(num.begin()+1,num.begin()+2);
+
+    for(auto it = num.begin(); it != num.end(); ++it)
         cout << *it << "\n";
 
     return 0;
