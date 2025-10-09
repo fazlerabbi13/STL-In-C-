@@ -18,6 +18,10 @@ int main(){
     cout<<"----------";
 
     num.emplace(num.begin()+2,100);
+
+    num.emplace_back(10);
+    num.emplace_back(11);
+    
     for(auto it = num.cbegin(); it != num.cend(); ++it)
         cout << *it << "\n";
 
