@@ -9,12 +9,12 @@ int main(){
 
     list<int>li;
     list<int>li2 {5,2,2,2,3,4};
-
+    
+    li.assign(5,9);
+    li2.merge(li);
 
     // li2.unique();
     // li2.remove(4);
-
-    // li.assign(5,3);
 
     //  li2.remove_if(single_disit);
 
