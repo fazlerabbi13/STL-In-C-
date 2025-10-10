@@ -7,6 +7,7 @@ int main(){
     li.assign(5,3);
 
     li.emplace_back(7);
+    li.emplace_front(2);
     
     for(int l: li){
         cout << l <<" ";
