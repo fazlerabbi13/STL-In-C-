@@ -8,6 +8,8 @@ int main(){
 
     li.emplace_back(7);
     li.emplace_front(2);
+
+    li.pop_front();
     
     for(int l: li){
         cout << l <<" ";
