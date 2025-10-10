@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+bool single_disit(const int& val){
+    return (val > 2);
+}
+
 int main(){
 
     list<int>li;
@@ -8,7 +12,9 @@ int main(){
 
     li2.remove(4);
 
-    li.assign(5,3);
+    // li.assign(5,3);
+    
+    li2.remove_if(single_disit);
 
     li.emplace_back(7);
     li.emplace_front(2);
