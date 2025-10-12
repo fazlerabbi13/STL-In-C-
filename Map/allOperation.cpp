@@ -5,6 +5,13 @@ using namespace std;
 int main(){
     map<int, string> map1;
 
+    map1.insert({3,"Fazle Rabbi"});
+    map1.insert({5,"Anayet"});
+
+    for(auto& element : map1){
+        cout << element.first << " " << element.second << "\n";
+    }
+
     map<int, string> map2 = {{2,"Hello"}, {1,"world"}};
 
     for(auto& e : map2){
