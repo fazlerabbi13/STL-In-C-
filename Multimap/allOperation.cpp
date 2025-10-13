@@ -12,12 +12,24 @@ int main(){
         {2, "Deux"}
     };
 
-    for(const auto& key_value: my_multimap){
-        int key = key_value.first;
-        string value = key_value.second;
+    multimap<string, int>name_roll;
+
+    name_roll.insert({"rabbi",47014});
+    name_roll.insert({"sagor",47015});
+
+    // for(const auto& key_value: my_multimap){
+    //     int key = key_value.first;
+    //     string value = key_value.second;
+
+    //     cout << key << " _ " << value <<"\n";
+    // }
+    for(const auto& key_value: name_roll){
+        
+        int key = key_value.second;
+        string value = key_value.first;
 
         cout << key << " _ " << value <<"\n";
     }
-    
+
     return 0;
 }
