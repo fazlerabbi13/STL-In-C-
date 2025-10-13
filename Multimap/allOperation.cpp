@@ -18,6 +18,10 @@ int main(){
     name_roll.insert({"sagor",47015});
 
     name_roll.erase("rabbi");
+
+    string result = name_roll.empty()? "yes" : "no";
+    cout << result << "\n";
+    
     // for(const auto& key_value: my_multimap){
     //     int key = key_value.first;
     //     string value = key_value.second;
