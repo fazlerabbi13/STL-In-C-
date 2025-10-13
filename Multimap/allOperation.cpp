@@ -17,6 +17,7 @@ int main(){
     name_roll.insert({"rabbi",47014});
     name_roll.insert({"sagor",47015});
 
+    name_roll.erase("rabbi");
     // for(const auto& key_value: my_multimap){
     //     int key = key_value.first;
     //     string value = key_value.second;
