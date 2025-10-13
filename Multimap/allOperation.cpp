@@ -3,25 +3,35 @@
 using namespace std;
 
 int main(){
-    multimap<int, string> my_multimap = {
-        {1, "Un"},
-        {1, "One"},
-        {2, "Two"},
-        {2, "Dos"},
-        {1, "Uno"},
-        {2, "Deux"}
-    };
+    // multimap<int, string> my_multimap = {
+    //     {1, "Un"},
+    //     {1, "One"},
+    //     {2, "Two"},
+    //     {2, "Dos"},
+    //     {1, "Uno"},
+    //     {2, "Deux"}
+    // };
 
     multimap<string, int>name_roll;
 
     name_roll.insert({"rabbi",47014});
     name_roll.insert({"sagor",47015});
 
-    name_roll.erase("rabbi");
+    // name_roll.erase("rabbi");
+    string key_to_find = "rabbi";
+    auto found = name_roll.find(key_to_find);
 
-    string result = name_roll.empty()? "yes" : "no";
-    cout << result << "\n";
-    
+
+    if(found != name_roll.end()){
+        cout << "Found key " << key_to_find << ": " << "\n";
+        cout << found->first << " - " << found->second << "\n";
+    }else {
+        cout << "Key " << key_to_find << " not found." << "\n";
+    }
+
+    // string result = name_roll.empty()? "yes" : "no";
+    // cout << result << "\n";
+
     // for(const auto& key_value: my_multimap){
     //     int key = key_value.first;
     //     string value = key_value.second;
