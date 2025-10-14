@@ -8,8 +8,16 @@ int main(){
     ms.insert(3);
     ms.insert(3);
     ms.insert(1);
-    
+
     for (auto i : ms)
         cout << i << " ";
+
+    auto it1 = ms.begin();
+    cout << *it1 << " " << "\n";
+
+    // auto it2 = next(it1, 2);
+    // cout << *it2 << "\n";
+
+    
     return 0;
 }
