@@ -9,11 +9,18 @@ int main(){
     ms.insert(3);
     ms.insert(1);
 
-    for (auto i : ms)
-        cout << i << " ";
+    // for (auto i : ms)
+    //     cout << i << " ";
 
-    auto it1 = ms.begin();
-    cout << *it1 << " " << "\n";
+     auto it = ms.find(3);
+
+    if (it != ms.end())
+        cout << *it;
+    else
+        cout << "Not Found!";
+
+    // auto it1 = ms.begin();
+    // cout << *it1 << " " << "\n";
 
     // auto it2 = next(it1, 2);
     // cout << *it2 << "\n";
