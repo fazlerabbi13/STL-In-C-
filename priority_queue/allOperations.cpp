@@ -86,17 +86,5 @@ int main() {
         temp.pop();
     }
 
-    // Min heap using greater<int>
-    priority_queue<int, vector<int>, greater<int>> minHeap;
-    minHeap.push(50);
-    minHeap.push(10);
-    minHeap.push(30);
-
-    cout << "\n\nMin-Heap: ";
-    while (!minHeap.empty()) {
-        cout << minHeap.top() << " ";
-        minHeap.pop();
-    }
-
     return 0;
 }
