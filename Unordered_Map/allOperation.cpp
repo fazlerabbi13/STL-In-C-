@@ -10,7 +10,8 @@ int main() {
     {{1, "hello"}, {2, "fazle"}, {3, "rabbi"}};
 
     um.insert({2,"mohammad"});
-    u
+    
+    cout << um[2] << "\n";
 
     for (auto i : um) 
         cout << i.first << ": " << i.second
